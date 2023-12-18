@@ -1,0 +1,17 @@
+.error-message {
+    display: flex;
+    box-sizing: border-box;
+    flex: 1;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--lumo-error-color-50pct);
+    color: var(--lumo-error-contrast-color);
+    border-color: var(--lumo-error-color);
+    border-left-style: solid;
+    border-left-width: 20px;
+    border-radius: var(--lumo-border-radius-s);
+    padding: var(--lumo-space-m);
+    margin: 0 !important;
+    min-height: 100px;
+}

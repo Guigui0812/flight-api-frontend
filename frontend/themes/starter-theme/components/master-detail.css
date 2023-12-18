@@ -1,0 +1,35 @@
+.master-detail-view {
+  display: flex;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.master-detail-view vaadin-split-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.master-detail-view .grid-layout {
+  display: flex;
+  box-sizing: border-box;
+  flex: 1;
+  flex-direction: column;
+  padding: 0;
+}
+
+.master-detail-view .editor-layout {
+  display: flex;
+  box-sizing: border-box;
+  flex: 1;
+  flex-direction: column;
+}
+
+.master-detail-view .grid-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.master-detail-view .editor-wrapper {
+  flex-grow: 1;
+  padding: var(--lumo-space-l);
+}
