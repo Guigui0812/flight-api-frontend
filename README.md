@@ -1,37 +1,23 @@
-# Project Base for Vaadin Flow and Quarkus
+# Frontend for the Flights API Project
 
-This project can be used as a starting point to create your own Vaadin Flow application for Quarkus. It contains all the necessary configuration with some placeholder files to get you started.
+This project is a frontend app developped for the Flight API, a project proposed during the fith year of the engineering school ESIEE Amiens.
 
-Quarkus 3.0+ requires Java 17.
+The original project is available [here](https://github.com/PetitGourou1999/FlightApp-Incomplete).
 
-Starter is also available for [gradle](https://github.com/vaadin/base-starter-flow-quarkus/tree/gradle)
+## Launch the project
 
-## Running the Application
+As this project as been built with Maven and Quarkus, you can launch it with the following command:
 
-Import the project to the IDE of your choosing as a Maven project. 
-
-Run application using `mvn clean quarkus:dev`
-
-Open [http://localhost:8080/](http://localhost:8080/) in browser.
-
-If you want to run your app locally in production mode, call `mvnw package -Pproduction` (Windows), or `./mvnw package -Pproduction` (Mac & Linux)
-and then
-```
-java -jar target/quarkus-app/quarkus-run.jar
+```bash
+mvn quarkus:dev
 ```
 
-### Including vaadin-jandex for Pro components
-If you are using Pro components such GridPro you need to provide the Jandex index for them as well. 
-Although, this can be achieved by adding their names one-by-one in the `application.properties` similar to the following example:
-```properties
-quarkus.index-dependency.vaadin-grid-pro.group-id=com.vaadin
-quarkus.index-dependency.vaadin-grid-pro.artifact-id=vaadin-grid-pro-flow
-```
-Vaadin recommends using the official Jandex index for the Pro components which is published as part of the platform:
-```xml
-<dependency>
-    <groupId>com.vaadin</groupId>
-    <artifactId>vaadin-jandex</artifactId>
-</dependency>
-```
-The above dependency has already added to the `pom.xml` and all you need to do is uncomment it when if needed. 
+After a while, the project will be available on localhost:8090.
+
+This frontend implements the following features:
+- Display the list of all the flights
+- A form to add a new flight
+- Display the list of all the planes
+- A form to add a new plane
+- Display the list of all reservations
+- A form to add a new reservation
